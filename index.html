@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathfinding Visualization</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+  </head>
+  <body>
+
+    <div class="container">
+      <section id="navigation" style="margin-top: 30px;">
+        <div class="row justify-content-center">
+          <div class="col">
+            <button id="origin-btn" class="btn btn-info">Origin</button>
+          </div>
+
+          <div class="col">
+            <button id="obstacle-btn" class="btn btn-primary">Obstacle</button>
+          </div>
+
+          <div class="col">
+            <button id="dest-btn" class="btn btn-danger">Destination</button>
+          </div>
+
+          <div class="col">
+            <button id="start-btn" class="btn btn-warning">Start</button>  
+          </div>
+        </div>
+
+      </section>
+
+      <section id="canvas" style="margin-top: 30px;">
+        <!-- <div class="row justify-content-center"> -->
+          <canvas id="editor"></canvas>
+        <!-- </div> -->
+      </section>
+      
+    </div>
+  
+    <script src="editor/node.js"></script>
+    <script src="editor/priority-queue.js"></script>
+    <script src="editor/a-star.js"></script>
+    <script src="editor/editor.js"></script>
+  </body>
+</html>
